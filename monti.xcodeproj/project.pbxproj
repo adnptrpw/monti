@@ -13,6 +13,8 @@
 		B3377D2C29CD1EA100719544 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3377D2B29CD1EA100719544 /* Preview Assets.xcassets */; };
 		B3377D3929CD1F6700719544 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3377D3829CD1F6700719544 /* LottieView.swift */; };
 		B3377D3C29CD203000719544 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = B3377D3B29CD203000719544 /* Lottie */; };
+		B3377D4229CD5B2B00719544 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3377D4129CD5B2B00719544 /* SplashView.swift */; };
+		B3377D6829CD74C600719544 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3377D6729CD74C600719544 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B3377D2829CD1EA100719544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3377D2B29CD1EA100719544 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3377D3829CD1F6700719544 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		B3377D4129CD5B2B00719544 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		B3377D6729CD74C600719544 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		B3377D2329CD1EA100719544 /* monti */ = {
 			isa = PBXGroup;
 			children = (
+				B3377D4529CD618300719544 /* Models */,
 				B3377D3429CD1EC300719544 /* Controller */,
 				B3377D3329CD1EBD00719544 /* Resources */,
 				B3377D3229CD1EB800719544 /* Views */,
@@ -76,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				B3377D3829CD1F6700719544 /* LottieView.swift */,
+				B3377D4129CD5B2B00719544 /* SplashView.swift */,
+				B3377D6729CD74C600719544 /* CameraView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,6 +101,13 @@
 				B3377D2629CD1EA100719544 /* ContentView.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3377D4529CD618300719544 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +188,8 @@
 			files = (
 				B3377D2729CD1EA100719544 /* ContentView.swift in Sources */,
 				B3377D2529CD1EA100719544 /* montiApp.swift in Sources */,
+				B3377D4229CD5B2B00719544 /* SplashView.swift in Sources */,
+				B3377D6829CD74C600719544 /* CameraView.swift in Sources */,
 				B3377D3929CD1F6700719544 /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
