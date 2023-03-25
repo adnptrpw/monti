@@ -12,6 +12,7 @@
 		B3377D2929CD1EA100719544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3377D2829CD1EA100719544 /* Assets.xcassets */; };
 		B3377D2C29CD1EA100719544 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3377D2B29CD1EA100719544 /* Preview Assets.xcassets */; };
 		B3377D4229CD5B2B00719544 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3377D4129CD5B2B00719544 /* SplashView.swift */; };
+		B35685F129CF4DF900FB9434 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = B35685F029CF4DF900FB9434 /* BottomSheet */; };
 		B360A51E29CDA8C100CB6C26 /* YourPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B360A51D29CDA8C100CB6C26 /* YourPictureView.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B35685F129CF4DF900FB9434 /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,9 +57,7 @@
 		B3377D2329CD1EA100719544 /* monti */ = {
 			isa = PBXGroup;
 			children = (
-				B3377D4529CD618300719544 /* Models */,
 				B3377D3429CD1EC300719544 /* Controller */,
-				B3377D3329CD1EBD00719544 /* Resources */,
 				B3377D3229CD1EB800719544 /* Views */,
 				B3377D2829CD1EA100719544 /* Assets.xcassets */,
 				B3377D2A29CD1EA100719544 /* Preview Content */,
@@ -82,13 +82,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		B3377D3329CD1EBD00719544 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		B3377D3429CD1EC300719544 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,13 +89,6 @@
 				B3377D4129CD5B2B00719544 /* SplashView.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		B3377D4529CD618300719544 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +108,7 @@
 			);
 			name = monti;
 			packageProductDependencies = (
+				B35685F029CF4DF900FB9434 /* BottomSheet */,
 			);
 			productName = monti;
 			productReference = B3377D2129CD1EA100719544 /* monti.app */;
@@ -152,6 +139,7 @@
 			);
 			mainGroup = B3377D1829CD1EA100719544;
 			packageReferences = (
+				B35685EF29CF4DF900FB9434 /* XCRemoteSwiftPackageReference "BottomSheet" */,
 			);
 			productRefGroup = B3377D2229CD1EA100719544 /* Products */;
 			projectDirPath = "";
@@ -383,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B35685EF29CF4DF900FB9434 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lucaszischka/BottomSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B35685F029CF4DF900FB9434 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B35685EF29CF4DF900FB9434 /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3377D1929CD1EA100719544 /* Project object */;
 }

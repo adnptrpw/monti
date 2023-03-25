@@ -14,7 +14,7 @@ struct ContentView: View {
             Spacer()
 //            TODO: Change into button and add action
             Label("Take a picture", systemImage: "camera").font(.title3.weight(.bold)).padding(EdgeInsets(top: 16, leading: 48, bottom: 16, trailing: 48)).background(Color("primary")).cornerRadius(1000)
-        }.padding(EdgeInsets(top: 64, leading: 16, bottom: 64, trailing: 16))
+        }.padding(EdgeInsets(top: 64, leading: 16, bottom: 164, trailing: 16))
     }
 }
 

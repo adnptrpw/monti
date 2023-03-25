@@ -15,7 +15,7 @@ struct SplashView: View {
     var body: some View {
         ZStack{
             if self.isActive{
-                ContentView()
+                YourPictureView()
             } else {
                 VStack(alignment: .center){
                     Image(splashScreen)
