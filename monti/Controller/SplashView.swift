@@ -36,16 +36,16 @@ struct SplashView: View {
     }
     
     func showMonti(){
-            
-      var index = 0
+        
+        var index = 0
         _ = Timer.scheduledTimer(withTimeInterval: 0.036, repeats: true){
             
             (Timer) in
             splashScreen = "main\(index)"
             index += 1
             
-            }
         }
+    }
 }
 
 struct SplashView_Previews: PreviewProvider {

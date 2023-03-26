@@ -55,6 +55,7 @@
 		B3377D2329CD1EA100719544 /* monti */ = {
 			isa = PBXGroup;
 			children = (
+				B3377D2829CD1EA100719544 /* Assets.xcassets */,
 				B37F55C529D021760088EDCA /* Preview Content */,
 				B3C4DD5429CFF46300D763E8 /* Resources */,
 				B3377D3429CD1EC300719544 /* Controller */,
@@ -92,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				B37F55BF29D015F70088EDCA /* MontiFinal.rcproject */,
-				B3377D2829CD1EA100719544 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
