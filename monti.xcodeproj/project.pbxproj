@@ -10,9 +10,8 @@
 		B3377D2529CD1EA100719544 /* montiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3377D2429CD1EA100719544 /* montiApp.swift */; };
 		B3377D2729CD1EA100719544 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3377D2629CD1EA100719544 /* ContentView.swift */; };
 		B3377D2929CD1EA100719544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3377D2829CD1EA100719544 /* Assets.xcassets */; };
-		B3377D2C29CD1EA100719544 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3377D2B29CD1EA100719544 /* Preview Assets.xcassets */; };
 		B3377D4229CD5B2B00719544 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3377D4129CD5B2B00719544 /* SplashView.swift */; };
-		B3C4DD5629CFF47400D763E8 /* Untitled.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B3C4DD5529CFF47400D763E8 /* Untitled.rcproject */; };
+		B37F55C029D015F70088EDCA /* MontiFinal.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B37F55BF29D015F70088EDCA /* MontiFinal.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,9 +19,8 @@
 		B3377D2429CD1EA100719544 /* montiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = montiApp.swift; sourceTree = "<group>"; };
 		B3377D2629CD1EA100719544 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B3377D2829CD1EA100719544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B3377D2B29CD1EA100719544 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3377D4129CD5B2B00719544 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		B3C4DD5529CFF47400D763E8 /* Untitled.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Untitled.rcproject; path = "../../../Monti AR/RCProjectMonti/Untitled.rcproject"; sourceTree = "<group>"; };
+		B37F55BF29D015F70088EDCA /* MontiFinal.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = MontiFinal.rcproject; path = ../../../../../../../Downloads/MontiFinal.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,18 +56,8 @@
 				B3C4DD5429CFF46300D763E8 /* Resources */,
 				B3377D3429CD1EC300719544 /* Controller */,
 				B3377D3229CD1EB800719544 /* Views */,
-				B3377D2829CD1EA100719544 /* Assets.xcassets */,
-				B3377D2A29CD1EA100719544 /* Preview Content */,
 			);
 			path = monti;
-			sourceTree = "<group>";
-		};
-		B3377D2A29CD1EA100719544 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				B3377D2B29CD1EA100719544 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		B3377D3229CD1EB800719544 /* Views */ = {
@@ -92,7 +80,8 @@
 		B3C4DD5429CFF46300D763E8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B3C4DD5529CFF47400D763E8 /* Untitled.rcproject */,
+				B37F55BF29D015F70088EDCA /* MontiFinal.rcproject */,
+				B3377D2829CD1EA100719544 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -159,7 +148,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3377D2C29CD1EA100719544 /* Preview Assets.xcassets in Resources */,
 				B3377D2929CD1EA100719544 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,7 +162,7 @@
 				B3377D2729CD1EA100719544 /* ContentView.swift in Sources */,
 				B3377D2529CD1EA100719544 /* montiApp.swift in Sources */,
 				B3377D4229CD5B2B00719544 /* SplashView.swift in Sources */,
-				B3C4DD5629CFF47400D763E8 /* Untitled.rcproject in Sources */,
+				B37F55C029D015F70088EDCA /* MontiFinal.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

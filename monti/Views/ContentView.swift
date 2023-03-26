@@ -16,6 +16,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
+            ARViewContainer().edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
                 if selectedImage == nil {
@@ -44,9 +45,10 @@ struct ContentView: View {
                             self.showImagePicker = true
                         }) {
                             Label("", systemImage: "photo.on.rectangle")
-                                .font(.largeTitle.weight(.medium))
-                                .padding(EdgeInsets(top: 12, leading: 0, bottom: 12, trailing: 0))
+                                .font(.title.weight(.medium))
+                                .padding(EdgeInsets(top: 12, leading: 24, bottom: 12, trailing: 16))
                                 .foregroundColor(Color.black)
+                                .background(Color.white).cornerRadius(1000)
                         }
                     }.padding(EdgeInsets(top: 0, leading: 40, bottom: 0, trailing: 40))
                 }
@@ -70,9 +72,9 @@ struct ContentView: View {
                                     UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
                                 }
                             }) {
-                                Label("", systemImage: "square.and.arrow.up")
+                                Label("Share", systemImage: "square.and.arrow.up")
                                     .font(.title3.weight(.bold))
-                                    .padding(EdgeInsets(top: 16, leading: 20, bottom: 16, trailing: 12))
+                                    .padding(EdgeInsets(top: 16, leading: 20, bottom: 16, trailing: 16))
                                     .background(Color("primary")).cornerRadius(1000)
                                     .foregroundColor(Color.black)
                             }
@@ -88,9 +90,11 @@ struct ContentView: View {
                             Button(action: {
                                 self.selectedImage = nil
                             }) {
-                                Image(systemName: "arrow.left")
-                                    .font(.largeTitle)
+                                Image(systemName: "chevron.left")
+                                    .font(.title)
+                                    .padding(EdgeInsets(top: 12, leading: 16, bottom: 12, trailing: 16))
                                     .foregroundColor(Color.black)
+                                    .background(Color.white).cornerRadius(1000)
                             }
                             .padding()
                             Spacer()
@@ -165,7 +169,7 @@ struct ARViewContainer: UIViewRepresentable {
         ARVariables.arView = ARView(frame: .zero)
         
         
-        let anchor = try! Untitled.loadOpeningScene()
+        let anchor = try! MontiFinal.loadOpeningScene()
         
         // Add the box anchor to the scene
         //        arView.scene.anchors.append(anchor)

@@ -38,7 +38,7 @@ struct SplashView: View {
     func showMonti(){
             
       var index = 0
-        _ = Timer.scheduledTimer(withTimeInterval: 0.04, repeats: true){
+        _ = Timer.scheduledTimer(withTimeInterval: 0.036, repeats: true){
             
             (Timer) in
             splashScreen = "main\(index)"
