@@ -20,7 +20,7 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 if selectedImage == nil {
-                    HStack {
+                    HStack(spacing: 24) {
                         Button {
                             // Placeholder: take a snapshot
                             ARVariables.arView.snapshot(saveToHDR: false) { (image) in
@@ -34,23 +34,21 @@ struct ContentView: View {
                         } label: {
                             Label("Take a picture", systemImage: "camera")
                                 .font(.title3.weight(.bold))
-                                .padding(EdgeInsets(top: 16, leading: 24, bottom: 16, trailing: 24))
+                                .padding(EdgeInsets(top: 16, leading: 20, bottom: 16, trailing: 20))
                                 .background(Color("primary")).cornerRadius(1000)
                                 .foregroundColor(Color.black)
                         }
-                        
-                        Spacer()
                         
                         Button(action: {
                             self.showImagePicker = true
                         }) {
                             Label("", systemImage: "photo.on.rectangle")
                                 .font(.title.weight(.medium))
-                                .padding(EdgeInsets(top: 12, leading: 24, bottom: 12, trailing: 16))
+                                .padding(EdgeInsets(top: 12, leading: 20, bottom: 12, trailing: 12))
                                 .foregroundColor(Color.black)
                                 .background(Color.white).cornerRadius(1000)
                         }
-                    }.padding(EdgeInsets(top: 0, leading: 40, bottom: 0, trailing: 40))
+                    }.padding(EdgeInsets(top: 0, leading: 36, bottom: 0, trailing: 36))
                 }
                 
             }
@@ -65,7 +63,7 @@ struct ContentView: View {
                             .aspectRatio(contentMode: .fit)
                             .padding()
 
-                        HStack(spacing: 16) {
+                        HStack {
                             Button(action: {
                                 if let image = selectedImage {
                                     let activityVC = UIActivityViewController(activityItems: [image], applicationActivities: nil)
