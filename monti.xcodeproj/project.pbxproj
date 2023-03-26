@@ -12,8 +12,6 @@
 		B3377D2929CD1EA100719544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3377D2829CD1EA100719544 /* Assets.xcassets */; };
 		B3377D2C29CD1EA100719544 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3377D2B29CD1EA100719544 /* Preview Assets.xcassets */; };
 		B3377D4229CD5B2B00719544 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3377D4129CD5B2B00719544 /* SplashView.swift */; };
-		B35685F129CF4DF900FB9434 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = B35685F029CF4DF900FB9434 /* BottomSheet */; };
-		B360A51E29CDA8C100CB6C26 /* YourPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B360A51D29CDA8C100CB6C26 /* YourPictureView.swift */; };
 		B3C4DD5629CFF47400D763E8 /* Untitled.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B3C4DD5529CFF47400D763E8 /* Untitled.rcproject */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +22,6 @@
 		B3377D2829CD1EA100719544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3377D2B29CD1EA100719544 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3377D4129CD5B2B00719544 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		B360A51D29CDA8C100CB6C26 /* YourPictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourPictureView.swift; sourceTree = "<group>"; };
 		B3C4DD5529CFF47400D763E8 /* Untitled.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Untitled.rcproject; path = "../../../Monti AR/RCProjectMonti/Untitled.rcproject"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,7 +30,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B35685F129CF4DF900FB9434 /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				B3377D2629CD1EA100719544 /* ContentView.swift */,
-				B360A51D29CDA8C100CB6C26 /* YourPictureView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,7 +114,6 @@
 			);
 			name = monti;
 			packageProductDependencies = (
-				B35685F029CF4DF900FB9434 /* BottomSheet */,
 			);
 			productName = monti;
 			productReference = B3377D2129CD1EA100719544 /* monti.app */;
@@ -150,7 +144,6 @@
 			);
 			mainGroup = B3377D1829CD1EA100719544;
 			packageReferences = (
-				B35685EF29CF4DF900FB9434 /* XCRemoteSwiftPackageReference "BottomSheet" */,
 			);
 			productRefGroup = B3377D2229CD1EA100719544 /* Products */;
 			projectDirPath = "";
@@ -180,7 +173,6 @@
 			files = (
 				B3377D2729CD1EA100719544 /* ContentView.swift in Sources */,
 				B3377D2529CD1EA100719544 /* montiApp.swift in Sources */,
-				B360A51E29CDA8C100CB6C26 /* YourPictureView.swift in Sources */,
 				B3377D4229CD5B2B00719544 /* SplashView.swift in Sources */,
 				B3C4DD5629CFF47400D763E8 /* Untitled.rcproject in Sources */,
 			);
@@ -387,25 +379,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		B35685EF29CF4DF900FB9434 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/lucaszischka/BottomSheet";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B35685F029CF4DF900FB9434 /* BottomSheet */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B35685EF29CF4DF900FB9434 /* XCRemoteSwiftPackageReference "BottomSheet" */;
-			productName = BottomSheet;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3377D1929CD1EA100719544 /* Project object */;
 }
