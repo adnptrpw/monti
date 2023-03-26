@@ -27,7 +27,7 @@ struct SplashView: View {
                 }
             }
         } .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 4.02) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.36) {
                 withAnimation {
                     self.isActive = true
                 }
@@ -38,7 +38,7 @@ struct SplashView: View {
     func showMonti(){
             
       var index = 0
-        _ = Timer.scheduledTimer(withTimeInterval: 0.03, repeats: true){
+        _ = Timer.scheduledTimer(withTimeInterval: 0.04, repeats: true){
             
             (Timer) in
             splashScreen = "main\(index)"
