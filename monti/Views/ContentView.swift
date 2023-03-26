@@ -54,13 +54,6 @@ struct ContentView: View {
             }
             .padding(EdgeInsets(top: 40, leading: 0, bottom: 40, trailing: 0))
             
-            // Add the blur background when the image is selected
-            if selectedImage != nil {
-                Rectangle()
-                    .fill(Color.white.opacity(0.16))
-                    .edgesIgnoringSafeArea(.all)
-            }
-            
             ZStack {
                 VStack {
                     if let image = selectedImage {
@@ -69,7 +62,7 @@ struct ContentView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding()
-                        
+
                         HStack(spacing: 16) {
                             Button(action: {
                                 if let image = selectedImage {
@@ -88,7 +81,7 @@ struct ContentView: View {
                         Spacer()
                     }
                 }
-                
+
                 if selectedImage != nil {
                     VStack {
                         HStack {
@@ -96,7 +89,7 @@ struct ContentView: View {
                                 self.selectedImage = nil
                             }) {
                                 Image(systemName: "arrow.left")
-                                    .font(.title)
+                                    .font(.largeTitle)
                                     .foregroundColor(Color.black)
                             }
                             .padding()
@@ -111,6 +104,7 @@ struct ContentView: View {
                     self.selectedImage = image
                 }
             }
+
         }
         
     }
