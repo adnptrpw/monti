@@ -61,7 +61,7 @@ struct ContentView: View {
                     .edgesIgnoringSafeArea(.all)
             }
             
-            GeometryReader { geometry in
+            ZStack {
                 VStack {
                     if let image = selectedImage {
                         Spacer()
@@ -71,16 +71,6 @@ struct ContentView: View {
                             .padding()
                         
                         HStack(spacing: 16) {
-                            Button(action: {
-                                self.selectedImage = nil
-                            }) {
-                                Label("Back", systemImage: "")
-                                    .font(.title3.weight(.bold))
-                                    .padding(EdgeInsets(top: 16, leading: 20, bottom: 16, trailing: 24))
-                                    .background(Color("primary").opacity(0.32)).cornerRadius(1000)
-                                    .foregroundColor(Color.black)
-                            }
-                            
                             Button(action: {
                                 if let image = selectedImage {
                                     let activityVC = UIActivityViewController(activityItems: [image], applicationActivities: nil)
@@ -98,14 +88,29 @@ struct ContentView: View {
                         Spacer()
                     }
                 }
-                .frame(width: geometry.size.width, height: geometry.size.height)
+                
+                if selectedImage != nil {
+                    VStack {
+                        HStack {
+                            Button(action: {
+                                self.selectedImage = nil
+                            }) {
+                                Image(systemName: "arrow.left")
+                                    .font(.title)
+                                    .foregroundColor(Color.black)
+                            }
+                            .padding()
+                            Spacer()
+                        }
+                        Spacer()
+                    }
+                }
             }
             .sheet(isPresented: $showImagePicker) {
                 ImagePicker(sourceType: .photoLibrary) { image in
                     self.selectedImage = image
                 }
             }
-            
         }
         
     }
