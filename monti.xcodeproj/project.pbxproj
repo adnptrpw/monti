@@ -12,6 +12,7 @@
 		B3377D2929CD1EA100719544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3377D2829CD1EA100719544 /* Assets.xcassets */; };
 		B3377D4229CD5B2B00719544 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3377D4129CD5B2B00719544 /* SplashView.swift */; };
 		B37F55C029D015F70088EDCA /* MontiFinal.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B37F55BF29D015F70088EDCA /* MontiFinal.rcproject */; };
+		B37F55C729D0218D0088EDCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37F55C629D0218D0088EDCA /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		B3377D2829CD1EA100719544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3377D4129CD5B2B00719544 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		B37F55BF29D015F70088EDCA /* MontiFinal.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = MontiFinal.rcproject; path = ../../../../../../../Downloads/MontiFinal.rcproject; sourceTree = "<group>"; };
+		B37F55C629D0218D0088EDCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Preview Assets.xcassets"; path = "../../../../../../../.Trash/Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		B3377D2329CD1EA100719544 /* monti */ = {
 			isa = PBXGroup;
 			children = (
+				B37F55C529D021760088EDCA /* Preview Content */,
 				B3C4DD5429CFF46300D763E8 /* Resources */,
 				B3377D3429CD1EC300719544 /* Controller */,
 				B3377D3229CD1EB800719544 /* Views */,
@@ -75,6 +78,14 @@
 				B3377D4129CD5B2B00719544 /* SplashView.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B37F55C529D021760088EDCA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B37F55C629D0218D0088EDCA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		B3C4DD5429CFF46300D763E8 /* Resources */ = {
@@ -148,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B37F55C729D0218D0088EDCA /* Preview Assets.xcassets in Resources */,
 				B3377D2929CD1EA100719544 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
