@@ -14,6 +14,7 @@
 		B3377D4229CD5B2B00719544 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3377D4129CD5B2B00719544 /* SplashView.swift */; };
 		B35685F129CF4DF900FB9434 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = B35685F029CF4DF900FB9434 /* BottomSheet */; };
 		B360A51E29CDA8C100CB6C26 /* YourPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B360A51D29CDA8C100CB6C26 /* YourPictureView.swift */; };
+		B3C4DD5629CFF47400D763E8 /* Untitled.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B3C4DD5529CFF47400D763E8 /* Untitled.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B3377D2B29CD1EA100719544 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3377D4129CD5B2B00719544 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		B360A51D29CDA8C100CB6C26 /* YourPictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourPictureView.swift; sourceTree = "<group>"; };
+		B3C4DD5529CFF47400D763E8 /* Untitled.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Untitled.rcproject; path = "../../../Monti AR/RCProjectMonti/Untitled.rcproject"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		B3377D2329CD1EA100719544 /* monti */ = {
 			isa = PBXGroup;
 			children = (
+				B3C4DD5429CFF46300D763E8 /* Resources */,
 				B3377D3429CD1EC300719544 /* Controller */,
 				B3377D3229CD1EB800719544 /* Views */,
 				B3377D2829CD1EA100719544 /* Assets.xcassets */,
@@ -89,6 +92,14 @@
 				B3377D4129CD5B2B00719544 /* SplashView.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3C4DD5429CFF46300D763E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3C4DD5529CFF47400D763E8 /* Untitled.rcproject */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				B3377D2529CD1EA100719544 /* montiApp.swift in Sources */,
 				B360A51E29CDA8C100CB6C26 /* YourPictureView.swift in Sources */,
 				B3377D4229CD5B2B00719544 /* SplashView.swift in Sources */,
+				B3C4DD5629CFF47400D763E8 /* Untitled.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +314,8 @@
 				DEVELOPMENT_TEAM = P6KF7ZYLJT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -331,6 +345,8 @@
 				DEVELOPMENT_TEAM = P6KF7ZYLJT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
